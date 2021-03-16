@@ -1,12 +1,25 @@
 #Migration to Angular version 10:
 Ce qui a changé dans cette version c'est que les fonctions utilisant des fonctionnalités Angular sans utiliser les decorators Angulars ne seront plus supportés
 
+Pour migrer : \
+Avoir un arbre propre (commiter les derniers changements) \
+Lancer la commande ng update @angular/core@10 @angular/cli@10 \
+Régler les possibles erreurs de dépendances, ou forcer l'install si les dépendances ne sont plus nécessaires \
+Commit les changements amenés par l'update (noms de fichiers modifiés, etc)
+
 #Migration to Angular version 11:
 On permet au type d'un parent d'être "null" pour améliorer la précision de la valeur pendant l'éxecution.
 Les utilisations de ViewEncapsulation.Native sont supprimés (car enlevé de Angular v11) et remplacés par ViewEncapsulation.ShadowDom
 Des options du fichier angular.json ont été enlevés car plus présentes dans la v11.
 Beaucoup de propriétés ont été mis à jours où remplacés car supprimées dans la v11.
 async a été renommée par waitForAsync
+
+Pour migrer : \
+Avoir un arbre propre (commiter les derniers changements) \
+Lancer la commande ng update @angular/core @angular/cli (pas de précision de version car version 11 est la dernière) \
+Lancer la commande ng update pour mettre à jour TypeScript (v 4.0 à partir de maintenant pour angular v11) \
+Régler les possibles erreurs de dépendances, ou forcer l'install si les dépendances ne sont plus nécessaires \
+Commit les changements amenés par l'update (noms de fichiers modifiés, etc)
 
 # SimpleApp
 
