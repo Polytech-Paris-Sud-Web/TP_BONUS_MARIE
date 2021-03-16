@@ -1,3 +1,13 @@
+#Migration to Angular version 10:
+Ce qui a changé dans cette version c'est que les fonctions utilisant des fonctionnalités Angular sans utiliser les decorators Angulars ne seront plus supportés
+
+#Migration to Angular version 11:
+On permet au type d'un parent d'être "null" pour améliorer la précision de la valeur pendant l'éxecution.
+Les utilisations de ViewEncapsulation.Native sont supprimés (car enlevé de Angular v11) et remplacés par ViewEncapsulation.ShadowDom
+Des options du fichier angular.json ont été enlevés car plus présentes dans la v11.
+Beaucoup de propriétés ont été mis à jours où remplacés car supprimées dans la v11.
+async a été renommée par waitForAsync
+
 # SimpleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
